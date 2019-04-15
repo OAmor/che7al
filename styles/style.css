@@ -1,116 +1,25 @@
-
-header {
-  padding: 154px 0 100px;
+/* Global Styles */
+body{
+    background: #fafafa;
 }
 
-@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
-  }
+/* Navigation Bar Styles */
+.main-nav{
+    background-image: linear-gradient(to left, #8610b0 , #a100b7);
 }
-
-section {
-  padding: 150px 0;
+.main-nav a{
+    color: #fff;
 }
-
-/* custom style */
-.header-background {
-  background-image: url("../images/1.9648248d9a15.png");
-  background-repeat: no-repeat;
-  padding-bottom: 200px;
-  background-position: 30% bottom;
+.main-nav a:hover{
+    color: #eee;
+    text-decoration: none;
 }
-.hd-text {
-  font-size: 75px !important;
-  font-weight: normal;
+.main-nav .nav-item{
+    margin-left: 20px;
 }
-.decimal {
-  font-size: 45px;
+.login-btn{
+    background: #fff;
+    color: #000 !important;
+    padding: 5px 18px;
+    border-radius: 5px;
 }
-.currency {
-  font-weight: bold;
-  font-size: 45px;
-}
-.justify-text {
-  text-align: justify;
-}
-.btn-transparent {
-    border: 2px solid rgba(255, 255, 255, 1);
-    background: transparent;
-    transition: all 0.3s ease 0s;
-    color: white;
-  }
-  
-  .btn-danger:hover {
-    color: #FFF;
-    background: rgba(107, 11, 91, 0.75);
-    border: 2px solid rgba(107, 11, 91, 0.75);
-  }
-
-  .btn-rounded {
-    font-family: Raleway-SemiBold;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 1px;
-    line-height: 15px;
-    border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 50px;
-    background: transparent;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .btn-rounded:hover {
-    color: #FFF;
-    background: rgba(107, 11, 91, 0.75);
-    border: 2px solid rgba(107, 11, 91, 0.75);
-  }
-
-  .pub-background {
-    background: rgba(0, 0, 0, 0.50);
-  }
-
-  .rounded {
-    border-radius: 50px;
-  }
-  .currency-details {
-    color: rgb(184, 184, 184) !important;
-    font-size: 13px;
-  }
-  .text-green {
-    color: green !important;
-  }
-  .text-red {
-    color: red !important;
-  }
-  .text-small {
-    font-size: 20px;
-  }
-
-  .bg-light {
-    color: black !important;
-  }
-
-  /* Start Header Styles */
-  #mainNav{
-    padding:0px 1rem;
-  }
-  .header-logo{
-    font-size: 38px;
-  }
-  .text-white{
-    padding: 0px;
-  }
-  .prices-type{
-      margin-bottom: 20px;
-  }
-  .currencyBtn{
-      margin: 30px;
-  }
-  /* End Header Styles */
-  footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding-top: 2rem;
-      padding-bottom: 2rem;
-  }
