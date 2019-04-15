@@ -1,6 +1,7 @@
 /* Global Styles */
 body{
     background: #fafafa;
+    color: #9b9b9b;
 }
 
 /* Navigation Bar Styles */
@@ -54,6 +55,9 @@ body{
     margin-top: 20px;
     color: #9b9b9b;
 }
+.card{
+    margin-bottom: 15px;
+}
 .card-text{
     font-size: 40px;
 }
@@ -63,4 +67,41 @@ body{
 .percent{
     color: #53da90;
     font-weight: bold;
+}
+
+.offers{
+    margin-top: 35px;
+}
+.offers table{
+    background: #fff;
+    border: 1px solid #dee2e6;
+}
+.btn-offer{
+    background: #8610b0;
+    color: #fff !important;
+    font-weight: bold;
+}
+.info-tr span{
+    font-weight: bold;
+}
+.info-tr a{
+    color: #9b9b9b;
+    text-decoration: none;
+    font-weight: bold;
+}
+.info-tr a:hover{
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+.data-tr i {
+    color: #8610b0;
+    font-size: 25px;
+}
+.data-tr td{
+    font-size: 18px;
+    font-weight: bold;
+}
+.data-tr .total{
+    font-size: 20px;
 }
