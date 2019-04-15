@@ -49,3 +49,18 @@ body{
     color: #fff;
     background-image: linear-gradient(to left, #8610b0 , #a100b7);
 }
+
+.cards{
+    margin-top: 20px;
+    color: #9b9b9b;
+}
+.card-text{
+    font-size: 40px;
+}
+.card-date{
+    margin-bottom: 0px;
+}
+.percent{
+    color: #53da90;
+    font-weight: bold;
+}
