@@ -23,3 +23,29 @@ body{
     padding: 5px 18px;
     border-radius: 5px;
 }
+/* Content Style */
+.main-div{
+    padding: 30px 0;
+}
+.page-item:first-child .page-link{
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+}
+.page-item:last-child .page-link{
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+}
+.page-link{
+    color: #999;
+    background: transparent;
+}
+.page-link:hover{
+    text-decoration: none;
+    color: #eee;
+    background: transparent;
+
+}
+.page-link.active{
+    color: #fff;
+    background-image: linear-gradient(to left, #8610b0 , #a100b7);
+}
