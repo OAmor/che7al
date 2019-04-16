@@ -42,6 +42,9 @@
             maintainAspectRatio: false,
             scales: {
                 xAxes: [{
+                    gridLines: {
+                        display:false
+                    },
                     type: 'time',
                     unit:'day',
                     step:5,
@@ -51,6 +54,9 @@
                     }
                 }],
                 yAxes: [{
+                    gridLines: {
+                        display:false
+                    },
                     scaleLabel: {
                         display: false,
                         labelString: 'Closing price ($)'
