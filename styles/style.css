@@ -133,3 +133,8 @@ body{
 .offer-modal select.form-control{
     color: #9b9b9b;
 }
+/* Chart Styles */
+canvas{
+    width: 100% !important;
+    height: 400px !important;
+}
