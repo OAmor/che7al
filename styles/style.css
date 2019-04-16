@@ -139,3 +139,10 @@ canvas{
     height: 400px !important;
     background: #fff;
 }
+.chart-title{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 19px;
+    font-weight: bold;
+}
