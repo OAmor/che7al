@@ -154,3 +154,8 @@ canvas{
 .chart-scales .page-item.active{
     color: #fff !important;
 }
+
+/* Footer Styles */
+footer{
+    padding: 30px 0;
+}
