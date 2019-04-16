@@ -55,6 +55,7 @@
                 }],
                 yAxes: [{
                     gridLines: {
+                        drawBorder: false,
                         display:false
                     },
                     scaleLabel: {
@@ -62,7 +63,7 @@
                         labelString: 'Closing price ($)'
                     },
                     ticks: {
-                        beginAtZero:true
+                        display:false
                     }
                 }]
             },
