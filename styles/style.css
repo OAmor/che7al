@@ -68,6 +68,9 @@ body{
     color: #53da90;
     font-weight: bold;
 }
+.digits{
+    font-size: 30px;
+}
 
 .offers{
     margin-top: 35px;
