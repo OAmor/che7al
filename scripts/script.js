@@ -38,6 +38,22 @@
             }]
         },
         options: {
+            layout: {
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 10
+                }
+            },
+            legend:{
+                display:false
+            },
+            title:{
+                display:true,
+                position:'top',
+                text:"Price History"
+            },
             responsive: true,
             maintainAspectRatio: false,
             scales: {
@@ -50,7 +66,10 @@
                     step:5,
                     ticks: {
                         source: 'data',
-                        autoSkip: true
+                        autoSkip: true,
+                        padding: 10,
+                        beginAtZero:false
+
                     }
                 }],
                 yAxes: [{
@@ -63,14 +82,14 @@
                         labelString: 'Closing price ($)'
                     },
                     ticks: {
-                        display:false
+                        display:false,
                     }
                 }]
             },
             tooltips: {
-                intersect: false,
-                mode: 'index',
-            }
+                enabled: true,
+                intersect: false
+            },
         }
     };
 
