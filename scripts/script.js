@@ -8,7 +8,7 @@
         bounds:'ticks',
         data: {
             datasets: [{
-                label: 'Dollar',
+                label: 'Buy Rate',
                 data: [{x:'2019-04-15',y:10},
                     {x:'2019-04-16',y:13},
                     {x:'2019-04-18',y:11},
@@ -23,7 +23,7 @@
                 backgroundColor:'#fee1e8',
                 borderColor:'#f863d9'
             },{
-                label: 'Euro',
+                label: 'Sell Rate',
                 data: [{x:'2019-04-15',y:20},
                     {x:'2019-04-16',y:15},
                     {x:'2019-04-18',y:11},
@@ -85,7 +85,23 @@
             },
             tooltips: {
                 enabled: true,
-                intersect: false
+                intersect: false,
+                callbacks: {
+                    title: function(tooltipItem, data) {
+                        return ''
+                    },
+                    label: function(tooltipItem, data) {
+                        var title = data['datasets'][tooltipItem['datasetIndex']]['label'],
+                            value = data['datasets'][tooltipItem['datasetIndex']]['data'][tooltipItem['index']].y;
+                        //return data['datasets'][0]['data'][tooltipItem['index']].y;
+                        return title + ': '+value+' Dzd';
+                    }
+                    
+                },
+                backgroundColor: '#d6fedc',
+                bodyFontColor: '#000',
+                bodyFontSize: 14,
+                displayColors: false
             },
         }
     };
