@@ -107,7 +107,7 @@
                     <td colspan="5">
                         <div class="d-flex align-items-center justify-content-between">
                             <span>Exchange Offers</span>
-                            <a class="btn btn-offer">Add Offer</a>
+                            <a data-toggle="modal" data-target="#offerModalCenter" class="btn btn-offer">Add Offer</a>
                         </div>
                     </td>
                 </tr>
@@ -154,6 +154,64 @@
                     </td>
                 </tr>
             </table>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="offerModalCenter" tabindex="-1" role="dialog" aria-labelledby="offerModalCenterTitle" aria-hidden="true">
+        <div class="offer-modal modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2>Add Offer</h2>
+                    <p>Select Currency and Amount</p>
+                    <div class="row">
+                        <div class="col">
+                            <select class="input-shadow form-control">
+                                <option class="select-placeholder" value="" disabled selected hidden>Currency</option>
+                                <option>Euro</option>
+                                <option>Dollar</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="number" class="input-shadow form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <hr>
+                    <p style="color: #9b9b9b">Enter locations</p>
+                    <div class="row location">
+                        <div class="col">
+                            <select class="input-shadow form-control">
+                                <option value="" disabled selected hidden>Country 1</option>
+                                <option value="">Algeria</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="input-shadow form-control">
+                                <option value="" disabled selected hidden>City 1</option>
+                                <option value="">Algeria</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row location">
+                        <div class="col">
+                            <select class="input-shadow form-control">
+                                <option value="" disabled selected hidden>Country 2</option>
+                                <option value="">Algeria</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="input-shadow form-control">
+                                <option value="" disabled selected hidden>City 2</option>
+                                <option value="">City 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-offer">Add exchange offer</button>
+                </div>
+            </div>
         </div>
     </div>
 <!-- Footer -->

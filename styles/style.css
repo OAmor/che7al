@@ -105,3 +105,28 @@ body{
 .data-tr .total{
     font-size: 20px;
 }
+.offer-modal{
+    max-width: 750px;
+}
+.offer-modal .modal-content{
+    background: #fafafa;
+    color: #000;
+}
+.offer-modal .modal-footer{
+    border-top: none;
+}
+.input-shadow{
+    -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.15);
+}
+.offer-modal .location{
+    margin-bottom: 30px;
+}
+.btn-cancel{
+    background: #ec5e5e;
+    color: #fff;
+}
+.offer-modal select.form-control{
+    color: #9b9b9b;
+}
