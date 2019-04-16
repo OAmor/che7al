@@ -1,9 +1,11 @@
 (function($) {
   "use strict"; // Start of use strict
+
     var ctx = $('#myChart');
 
     var config = {
         type: 'bar',
+        bounds:'ticks',
         data: {
             datasets: [{
                 label: 'Dollar',
@@ -57,15 +59,16 @@
                         display:false
                     },
                     type: 'time',
+                    distribution: 'linear',
                     unit:'day',
-                    step:5,
+                    minUnit:'hour',
                     ticks: {
                         source: 'data',
-                        autoSkip: true,
+                        autoSkip: false,
                         padding: 10,
-                        beginAtZero:false
-
-                    }
+                        beginAtZero:true,
+                    },
+                    bounds: "ticks"
                 }],
                 yAxes: [{
                     gridLines: {
@@ -74,7 +77,6 @@
                     },
                     scaleLabel: {
                         display: false,
-                        labelString: 'Closing price ($)'
                     },
                     ticks: {
                         display:false,
@@ -89,5 +91,15 @@
     };
 
     var myChart = new Chart(ctx, config);
+
+
+    /* Handel Scale Changes*/
+    $('.chart-scales .page-item').click(function () {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+
+        myChart.options.scales.xAxes[0].time.unit = $(this).data('val');
+        myChart.update();
+    })
 
 })(jQuery); // End of use strict

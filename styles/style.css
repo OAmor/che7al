@@ -151,3 +151,6 @@ canvas{
     top: 10px;
     right: 10px;
 }
+.chart-scales .page-item.active{
+    color: #fff !important;
+}
