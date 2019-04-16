@@ -23,6 +23,7 @@ body{
     color: #000 !important;
     padding: 5px 18px;
     border-radius: 5px;
+    font-weight: bold;
 }
 /* Content Style */
 .main-div{
@@ -134,6 +135,9 @@ body{
     color: #9b9b9b;
 }
 /* Chart Styles */
+.chart-container{
+    margin-top: 40px;
+}
 canvas{
     width: 100% !important;
     height: 400px !important;
