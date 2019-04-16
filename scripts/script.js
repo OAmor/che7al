@@ -101,6 +101,7 @@
                 backgroundColor: '#d6fedc',
                 bodyFontColor: '#000',
                 bodyFontSize: 14,
+                bodyFontWeight: 'bold',
                 displayColors: false
             },
         }
